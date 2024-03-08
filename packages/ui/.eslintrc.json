@@ -1,0 +1,35 @@
+{
+  "extends": [
+    // By extending from a plugin config, we can get recommended rules without having to add them manually.
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint errors.
+    // Make sure it's always the last config, so it gets the chance to override other configs.
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    // Add your own rules here to override ones from the extended configs.
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "prefer-const": "off",
+    "no-control-regex": "off",
+    "no-case-declarations": "off"
+  },
+  "root": true
+}

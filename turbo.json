@@ -1,0 +1,38 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "test:ts": {
+      "outputs": []
+    },
+    "lint": {
+      "outputs": []
+    },
+    "test:unit": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", "build/**", "public/**"]
+    },
+    "build:storybook": {},
+    "dev": {
+      "cache": false
+    },
+    "customer-playground#test:ts": {
+      "dependsOn": ["@slashid/ui#build"]
+    },
+    "customer-playground#dev": {
+      "dependsOn": ["@slashid/ui#build"]
+    },
+    "customer-playground#build": {
+      "dependsOn": ["@slashid/ui#build"]
+    },
+    "organization-switching#start": {
+      "dependsOn": ["@slashid/ui#build"]
+    },
+    "organization-switching#build": {
+      "dependsOn": ["@slashid/ui#build"]
+    }
+  }
+}

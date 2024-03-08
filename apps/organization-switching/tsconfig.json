@@ -1,0 +1,21 @@
+{
+  "ts-node": {
+    "cwd": "/Users/jake/dev/ui/apps/organization-switching",
+    "projectSearchDir": "/Users/jake/dev/ui/apps/organization-switching",
+    "project": "/Users/jake/dev/ui/apps/organization-switching/tsconfig.json"
+  },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "inlineSources": true,
+    "declaration": false,
+    "noEmit": false,
+    "outDir": "./.ts-node",
+    "module": "commonjs"
+  }
+}

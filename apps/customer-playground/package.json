@@ -1,0 +1,54 @@
+{
+  "name": "customer-playground",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "test:ts": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remix-run/css-bundle": "1.14.1",
+    "@remix-run/node": "^1.15.0",
+    "@remix-run/react": "^1.15.0",
+    "@remix-run/vercel": "^1.15.0",
+    "@sentry/remix": "^7.54.0",
+    "@slashid/react": "^1.19.0",
+    "@slashid/slashid": "3.19.1-next.20",
+    "@slashid/ui": "workspace:*",
+    "@types/js-cookie": "^3.0.3",
+    "@vanilla-extract/css": "^1.10.0",
+    "@vercel/node": "^2.15.1",
+    "@vercel/remix": "^1.15.0",
+    "clsx": "^1.2.1",
+    "immer": "^9.0.21",
+    "isbot": "^3.6.8",
+    "jose": "^4.14.4",
+    "js-cookie": "^3.0.5",
+    "lodash.debounce": "^4.0.8",
+    "node-cache": "^5.1.2",
+    "nodemailer": "^6.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-gtm-module": "^2.0.11",
+    "react-json-view-lite": "^0.9.5",
+    "use-immer": "^0.9.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.15.0",
+    "@remix-run/eslint-config": "^1.15.0",
+    "@remix-run/serve": "^1.15.0",
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/nodemailer": "^6.4.8",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-gtm-module": "^2.0.3",
+    "@types/uuid": "^9.0.1",
+    "eslint": "^8.38.0",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=16.19.0"
+  }
+}
