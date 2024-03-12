@@ -3,8 +3,11 @@
 This monorepo hosts the `/id` internal component library and projects built on top of it.
 
 ## Setup
-
-Install `pnpm` globally. Then run `pnpm install`. Project is managed by `turborepo`.
+1. Make sure you are using `Node v16.19.0`.
+2. Install `pnpm v7.26.3` globally.
+3. Run `pnpm install`.
+  
+Project is managed by `turborepo`.
 
 ### Environment variables
 
